@@ -25,3 +25,7 @@ export default async function handler(req, res) {
   const data = await grokRes.json();
   res.status(200).json(data);
 }
+
+
+
+add Grok chat handler for suspect simulation
