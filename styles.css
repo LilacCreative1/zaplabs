@@ -1,0 +1,183 @@
+/* ZAP Labs Custom Styles */
+
+/* General Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #002f6d;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #001f4d;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #00a1d8;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #0090c0;
+  transform: translateY(-2px);
+}
+
+.btn-accent {
+  background-color: #ffdd00;
+  color: #002f6d;
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+  background-color: #eecf00;
+  transform: translateY(-2px);
+}
+
+/* Card Styles */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Nav Link Animation */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ffdd00;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Form Controls */
+.form-control {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #00a1d8;
+  box-shadow: 0 0 0 3px rgba(0, 161, 216, 0.25);
+}
+
+/* Scenario Card Tag Styling */
+.scenario-tag {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: rgba(0, 161, 216, 0.1);
+  color: #0065a1;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #00a1d8;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+/* Animation for page transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Chat interface styling */
+.chat-message {
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.chat-message.user {
+  background-color: #0065a1;
+  color: white;
+  margin-left: auto;
+  border-bottom-right-radius: 4px;
+}
+
+.chat-message.ai {
+  background-color: #f1f5f9;
+  color: #334155;
+  margin-right: auto;
+  border-bottom-left-radius: 4px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00a1d8;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0065a1;
+}
