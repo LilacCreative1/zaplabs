@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ZAP Labs - AI-Powered Suspect Interview Training</title>
+		<meta name="description" content="Enhance your investigative skills with ZAP Labs. AI-driven suspect interview simulations and evaluations for law enforcement professionals.">
+		<link rel="icon" href="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/11097/9ef0dab9-a859-4ff5-a442-f42d02bcda27.png" type="image/x-icon">
+		
+		<!-- React and Router -->
+		<script src="https://cdn.ezsite.ai/static/react.production.min.js"></script>
+		<script src="https://cdn.ezsite.ai/static/react-dom.production.min.js"></script>
+		<script src="https://cdn.ezsite.ai/static/5.3.0/history.production.min.js"></script>
+		<script src="https://cdn.ezsite.ai/static/6.3.0/react-router.production.min.js"></script>
+		<script src="https://cdn.ezsite.ai/static/6.3.0/react-router-dom.production.min.js"></script>
+		
+		<!-- Babel -->
+		<script src="https://cdn.ezsite.ai/static/babel.min.js"></script>
+		
+		<!-- TailwindCSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		
+		<!-- Font Awesome -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="css/styles.css" rel="stylesheet">
+		<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBlue: '#002f6d',
+                        mediumBlue: '#0065a1',
+                        lightBlue: '#00a1d8',
+                        zapYellow: '#ffdd00',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        ibm: ['"IBM Plex Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    
+		</script>
+		<script project-code="7yupcizgxdrb" src="https://ezsite.ai/ezsite-api.js"></script>
+		<script src="https://ezsite.ai/ezsite-chatbot.js"></script>
+	<meta property="og:title" content="Train Smarter with ZAP Labs"><meta property="og:description" content="Experience AI-powered suspect interview simulations. Practice, evaluate, and improve your techniques with ZAP Labs."><meta name="twitter:title" content="🚔 ZAP Labs: AI Interview Training"><meta name="twitter:description" content="Practice suspect interviews with AI. Secure, professional, and trauma-informed training for investigators."><meta property="og:image" content="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/11097/f624e941-3a5d-48f8-928e-ae6e27f8f4bc.png"><meta name="twitter:image" content="https://newoaks.s3.us-west-1.amazonaws.com/AutoDev/11097/ee30c379-90ac-4dc7-83cb-01f0b6ad5649.png"></head>
+	<body class="font-inter bg-gray-50 text-gray-900">
+		<div id="root"></div>
+		
+		<!-- Components -->
+		<script type="text/babel" src="/components/Navbar.js"></script>
+		<script type="text/babel" src="/components/Footer.js"></script>
+		<script type="text/babel" src="/components/Hero.js"></script>
+		<script type="text/babel" src="/components/HowItWorks.js"></script>
+		<script type="text/babel" src="/components/ScenarioCard.js"></script>
+		<script type="text/babel" src="/components/FeaturedScenarios.js"></script>
+		<script type="text/babel" src="/components/AboutSection.js"></script>
+		<script type="text/babel" src="/components/LoginForm.js"></script>
+		<script type="text/babel" src="/components/ChatInterface.js"></script>
+		<script type="text/babel" src="/components/EvaluationForm.js"></script>
+		<script type="text/babel" src="/components/ProgressChart.js"></script>
+		<script type="text/babel" src="/components/ProtectedRoute.js"></script>
+		<script type="text/babel" src="/components/ApiKeyManager.js"></script>
+		<script type="text/babel" src="/components/ApiUsageMonitor.js"></script>
+		<script type="text/babel" src="/components/ThrottlingConfig.js"></script>
+		<script type="text/babel" src="/components/ApiSecurityInfo.js"></script>
+		<script type="text/babel" src="/components/VisualExamples.js"></script>
+		<script type="text/babel" src="/components/InterfaceDemo.js"></script>
+		<script type="text/babel" src="/components/ErrorHandlingDemo.js"></script>
+		<script type="text/babel" src="/components/SuspectsList.js"></script>
+		
+		<!-- Pages -->
+		<script type="text/babel" src="/pages/Home.js"></script>
+		<script type="text/babel" src="/pages/Scenarios.js"></script>
+		<script type="text/babel" src="/pages/Evaluation.js"></script>
+		<script type="text/babel" src="/pages/Progress.js"></script>
+		<script type="text/babel" src="/pages/Resources.js"></script>
+		<script type="text/babel" src="/pages/Login.js"></script>
+		<script type="text/babel" src="/pages/Simulation.js"></script>
+		<script type="text/babel" src="/pages/AdminSettings.js"></script>
+		<script type="text/babel" src="/pages/ErrorDemo.js"></script>
+		
+		<!-- Components for Error Handling -->
+		<script type="text/babel" src="/components/ErrorMessage.js"></script>
+		<script type="text/babel" src="/components/NotificationManager.js"></script>
+		<script type="text/babel" src="/components/NetworkStatusIndicator.js"></script>
+
+		<!-- Utils -->
+		<script type="text/babel" src="/utils/errorHandler.js"></script>
+		<script type="text/babel" src="/utils/helpers.js"></script>
+		<script type="text/babel" src="/utils/auth.js"></script>
+		<script type="text/babel" src="/utils/requestThrottling.js"></script>
+		<script type="text/babel" src="/utils/grokApiService.js"></script>
+		<script type="text/babel" src="/utils/api.js"></script>
+		
+		<!-- Grok API is now managed by secure backend -->
+		
+		<!-- Main App -->
+		<script type="text/babel" src="/app.js"></script>
+	</body>
+</html>

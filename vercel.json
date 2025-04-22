@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/grok",
+      "methods": ["OPTIONS", "POST"],
+      "dest": "/server.js",
+      "headers": {
+        "Access-Control-Allow-Origin": "https://002-11097-7yupcizgxdrb-preview.ezsite.ai",
+        "Access-Control-Allow-Methods": "OPTIONS, POST",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
